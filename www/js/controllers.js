@@ -8,13 +8,18 @@ function ($scope, $stateParams) {
 
 }])
   .controller('lightListCtrl', function ($scope, $state) {
-    
-    
-    
-    
+
+    $scope.goToColorPicker = function () {
+      console.log("Clicked!");
+      $state.go('rgbColorPicker');
+
+    }
+
+
+
   })
-  .controller('rgbColorPicker', function () {
-    
-    
-    
+  .controller('rgbColorPicker', function ($scope) {
+
+
+
   });
